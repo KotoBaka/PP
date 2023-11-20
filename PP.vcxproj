@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="io.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PP.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="io.h" />
