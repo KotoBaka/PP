@@ -1,5 +1,5 @@
 #include <iostream>
-
+#if 0
 int readNumber()
 {
 	int x{};
@@ -10,5 +10,6 @@ int readNumber()
 
 void writeAnswer(int A)
 {
-	std::cout << A;
+	std::cout << "Answer is " << A;
 }
+#endif
