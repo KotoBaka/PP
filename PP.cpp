@@ -1,23 +1,18 @@
 ﻿#include <iostream>
-
-bool isPrimeNumb(int x)
-{
-if (x > 1)
-	if (x % 2 != 0 && x % 3 != 0 && x % 5 != 0 && x % 7 != 0)
-	return true;
-
-return false;
-}
+#include <string>
+#include <iomanip>
 
 int main()
 {
-	int pNumb;
-	std::cout << "Enter a a prime number\n";
-	std::cin >> pNumb;
+	std::cout << "Enter your full name: ";
+	std::string nm{};
+	std::getline(std::cin >> std::ws, nm);
 
-	if (isPrimeNumb(pNumb) == 1)
-		std::cout << "The digit is prime";
-	else
-		std::cout << "The digit is not prime";
+	std::cout << "Enter your age: ";
+	int age{};
+	std::cin >> age;
+
+	std::cout << "You've lived " << static_cast <double>(age)/ static_cast <double>(nm.length()) << " years for each letter in your name";
+
 	return 0;
 }
