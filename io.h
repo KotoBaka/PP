@@ -1,6 +1,7 @@
 #ifndef IO_H
 #define IO_H
-int readNumber();
 
-void writeAnswer(int A);
+double Value();
+
+double Calculate (double, char, double);
 #endif

@@ -1,18 +1,17 @@
 ﻿#include <iostream>
-#include <string>
-#include <iomanip>
+#include "io.h"
+
 
 int main()
 {
-	std::cout << "Enter your full name: ";
-	std::string nm{};
-	std::getline(std::cin >> std::ws, nm);
+	double v1 { Value() };
+	double v2 { Value() };
 
-	std::cout << "Enter your age: ";
-	int age{};
-	std::cin >> age;
+	std::cout << "Enter one of the following: +, -, *, or /: ";
+	char op{};
+	std::cin >> op;
 
-	std::cout << "You've lived " << static_cast <double>(age)/ static_cast <double>(nm.length()) << " years for each letter in your name";
+	std::cout << v1 << op << v2 << " is " << Calculate(v1, op, v2);
 
 	return 0;
 }

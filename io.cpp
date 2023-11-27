@@ -1,15 +1,21 @@
 #include <iostream>
-#if 0
-int readNumber()
+
+double Value()
 {
-	int x{};
-	std::cout << "enter number\n";
-	std::cin >> x;
-	return x;
+	std::cout << "Enter a double value: ";
+	double value{};
+	std::cin >> value;
+	return value;
 }
 
-void writeAnswer(int A)
+double Calculate(double v1, char op, double v2)
 {
-	std::cout << "Answer is " << A;
+	if (op == '+')
+		return v1 + v2;
+	else if (op == '-')
+		return v1 - v2;
+	else if (op == '/')
+		return v1 / v2;
+	else if (op == '*')
+		return v1 * v2;
 }
-#endif
