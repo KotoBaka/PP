@@ -26,5 +26,8 @@
     <ClInclude Include="io.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="constants.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
