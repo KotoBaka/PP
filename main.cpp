@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <cstdint>
 #include "myFunc.h"
 #include "constants.h"
 
