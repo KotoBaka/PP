@@ -1,9 +1,10 @@
 #include <iostream>
 #include "constants.h"
+#include <cmath>
 
 double calculateH(double h, int t)
 {
-	double s{};		// расстояние падения
+	double s{};		// Г°Г Г±Г±ГІГ®ГїГ­ГЁГҐ ГЇГ Г¤ГҐГ­ГЁГї
 	s = (g * pow(t, 2)) / 2;
 
 	return h - s;
