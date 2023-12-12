@@ -1,18 +1,19 @@
-﻿#include "constants.h"
+﻿#include <iostream>
 
-#include <iostream>
+bool passOrFail()
+{
+	static int c{ 0 };
+	c++;
+	return (c <= 3);
+}
 
 int main()
 {
-	std::cout << "How many students are in your class? ";
-	int students{};
-	std::cin >> students;
-
-
-	if (students > constants::max_class_size)
-		std::cout << "There are too many students in this class";
-	else
-		std::cout << "This class isn't too large";
+	std::cout << "User #1: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+	std::cout << "User #2: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+	std::cout << "User #3: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+	std::cout << "User #4: " << (passOrFail() ? "Pass" : "Fail") << '\n';
+	std::cout << "User #5: " << (passOrFail() ? "Pass" : "Fail") << '\n';
 
 	return 0;
 }
